@@ -134,6 +134,7 @@ def get_text(row, table_name, chat_id):
                 bot.send_photo(chat_id, photo)
             return (
                 f"*ID жителя:* {int(row['ID'].values[0])}\n"
+                f"ФИО: {row['ФИО'].values[0]}\n"
                 f"Общее количество добрых дел: {int(row['Общее количество Добрых Дел'].fillna(0).values[0])}\n"
                 f"Общее количество Ростиков: {int(row['Общее количество баллов'].fillna(0).values[0])}\n"
                 f"Город: {row['Глобальный субъект'].values[0]}\n"
@@ -146,6 +147,7 @@ def get_text(row, table_name, chat_id):
                 bot.send_photo(chat_id, photo)
             return (
                 f"*ID организаций:* {int(row['ID'].values[0])}\n"
+                f"Название организаций: {row['Название организации'].values[0]}\n"
                 f"Тип НКО: {row['Тип НКО'].values[0]}\n"
                 f"Общее количество выполненных мероприятий: {int(row['Общее количество Мероприятий'].fillna(0).values[0])}\n"
                 f"Общее количество добрых дел: {int(row['Общее количество Добрых дел'].fillna(0).values[0])}\n"
@@ -158,6 +160,7 @@ def get_text(row, table_name, chat_id):
                 bot.send_photo(chat_id, photo)
             return (
                 f"*ID организаций:* {int(row['ID'].values[0])}\n"
+                f"Название организаций: {row['Название организации'].values[0]}\n"
                 f"Общее количество выполненных мероприятий: {int(row['Общее количество Мероприятий'].fillna(0).values[0])}\n"
                 f"Общее количество добрых дел: {int(row['Общее количество Добрых дел'].fillna(0).values[0])}\n"
                 f"Мероприятия в категории: Иное {int(row['Мероприятия в категории: Иное'].fillna(0).values[0])}\n"
@@ -183,6 +186,7 @@ def get_text(row, table_name, chat_id):
                 bot.send_photo(chat_id, photo)
             return (
                 f"*ID организации:* {int(row['ID'].values[0])}\n"
+                f"Название организаций: {row['Название организации'].values[0]}\n"
                 f"Общее количество выполненных мероприятий: {int(row['Общее количество Мероприятий'].fillna(0).values[0])}\n"
                 f"Общее количество активных участников на мероприятиях: {int(row['Общее количество Добрых дел'].fillna(0).values[0])}\n"
                 f"Город: {row['Глобальный субъект'].values[0]}\n"
@@ -195,6 +199,7 @@ def get_text(row, table_name, chat_id):
                 bot.send_photo(chat_id, photo)
             return (
                 f"*ID организации:* {int(row['ID'].values[0])}\n"
+                f"Название организаций: {row['Название организации'].values[0]}\n"
                 f"Общее количество выполненных мероприятий: {int(row['Общее количество Мероприятий'].fillna(0).values[0])}\n"
                 f"Общее количество активных участников на мероприятиях: {int(row['Общее количество Добрых дел'].fillna(0).values[0])}\n"
                 f"Город: {row['Глобальный субъект'].values[0]}\n"
@@ -207,6 +212,7 @@ def get_text(row, table_name, chat_id):
                 bot.send_photo(chat_id, photo)
             return (
                 f"*ID организации:* {int(row['ID'].values[0])}\n"
+                f"Название организаций: {row['Название организации'].values[0]}\n"
                 f"Общее количество выполненных мероприятий: {int(row['Общее количество Мероприятий'].fillna(0).values[0])}\n"
                 f"Общее количество активных участников на мероприятиях: {int(row['Общее количество Добрых дел'].fillna(0).values[0])}\n"
                 f"Город: {row['Глобальный субъект'].values[0]}\n"
