@@ -172,6 +172,7 @@ def get_text(row, table_name, chat_id):
                 bot.send_photo(chat_id, photo)
             return (
                 f"*ID организации:* {int(row['ID'].values[0])}\n"
+                f"Название организаций: {row['Название организации'].values[0]}\n"
                 f"Штат: {row['Штат'].values[0]}\n"
                 f"Тип бизнеса: {row['Тип бизнеса'].values[0]}\n"
                 f"Общее количество выполненных мероприятий: {int(row['Общее количество Мероприятий'].fillna(0).values[0])}\n"
