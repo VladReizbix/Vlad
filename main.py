@@ -266,8 +266,8 @@ bot.send_message(log_chat_id,'Бот запущен')
 @bot.message_handler(commands=['start'])
 def send_welcome(message: Message) -> None:
     markup = main_markup()
-    with open('Сердечко.PNG', 'rb') as photo_file:
-        bot.send_photo(message.chat.id, photo_file, caption=f"Приветствую, {message.from_user.first_name}! Я телеграмм бот эстафеты и буду тебе помогать в течение всего года!\n\nВыбери нужный пункт меню!👇", reply_markup=markup)
+    with open('приветствие.mp4', 'rb') as video_file:
+        bot.send_video(message.chat.id, video_file, caption=f"Приветствую, {message.from_user.first_name}! Я телеграмм бот эстафеты и буду тебе помогать в течение всего года!\n\nВыбери нужный пункт меню!👇", reply_markup=markup)
     
    
     bot.send_message(log_chat_id, f'Команда /start обработана. Пользователь: {message.from_user.id}, Имя: {message.from_user.first_name}')
